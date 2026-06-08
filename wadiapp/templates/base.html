@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}DECAPOLI{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+    <link rel="shortcut icon" href="{% static 'images/favicon.svg' %}" type="image/svg+xml">
+    <meta name="application-name" content="DECAPOLI">
+    <meta name="description" content="DECAPOLI — modern supplier of bolts, nuts, washers and automotive fasteners.">
+    <meta name="theme-color" content="#0f766e">
+</head>
+<body>
+    <header class="site-header">
+        <div class="brand">DECA<span>POLI</span></div>
+        <div style="display:flex; align-items:center; gap:1rem;">
+            <div class="search-wrap">
+                <input id="site-search" class="search-input" type="search" placeholder="Search products, e.g. hex bolt">
+            </div>
+            <nav class="site-nav" aria-label="Primary navigation">
+                <a class="nav-link" href="/">Home</a>
+                <a class="nav-link" href="/about/">About</a>
+                <a class="nav-link" href="/contact/">Contact</a>
+                <a class="cta" href="/contact/">Get in touch</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="page-content">
+        {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">Designed for modern fastener buyers and suppliers.</footer>
+    <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

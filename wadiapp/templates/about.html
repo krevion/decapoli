@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}About | DECAPOLI{% endblock %}
+
+{% block content %}
+<section class="about-hero section-card">
+    <div class="about-copy">
+        <p class="eyebrow">Trusted by professionals, builders, and automotive teams</p>
+        <h2 class="section-title">Modern fastener sourcing for bolts, nuts, washers, and automotive hardware.</h2>
+        <p>DECAPOLI delivers a premium experience for customers who demand quality and speed. From engineered center bolts to spring washers and car spacers, we make it easy to find the right part, fast.</p>
+        <p>Our team combines deep product knowledge with efficient inventory management so you can focus on the build, not the search. We partner with trusted manufacturers and keep stock moving so your project never stalls.</p>
+        <div class="about-highlights">
+            <div>
+                <strong>Fast delivery</strong>
+                <p>Rapid turnaround and transparent lead times for every order.</p>
+            </div>
+            <div>
+                <strong>Quality you can trust</strong>
+                <p>Premium materials, inspected parts, and consistency in every shipment.</p>
+            </div>
+            <div>
+                <strong>Expert guidance</strong>
+                <p>Advice for the right application, from automotive projects to industrial assemblies.</p>
+            </div>
+        </div>
+    </div>
+    <div class="about-image">
+        <img src="{% static 'images/pexels-john-triwinata-1666548748-28867253.jpg' %}" alt="Stainless bolts piled together">
+    </div>
+</section>
+
+<section class="about-grid">
+    <article class="about-card">
+        <img src="{% static 'images/pexels-padrinan-3930093.jpg' %}" alt="Close-up of precision washers">
+        <div class="about-card-content">
+            <h3>Precision washers & components</h3>
+            <p>Every product is selected for consistency, strength, and value in the most demanding applications.</p>
+        </div>
+    </article>
+    <article class="about-card">
+        <img src="{% static 'images/pexels-subhd-suhail-118636722-37662322.jpg' %}" alt="Bolts and nuts inventory">
+        <div class="about-card-content">
+            <h3>Large inventory, right now</h3>
+            <p>From body clips to center bolts, we stock the most requested parts so you can keep moving.</p>
+        </div>
+    </article>
+    <article class="about-card">
+        <img src="{% static 'images/pexels-tomfisk-18500079.jpg' %}" alt="Industrial fastener assembly">
+        <div class="about-card-content">
+            <h3>Built for modern projects</h3>
+            <p>Our range supports automotive, industrial, and construction needs with modern product selection and styling.</p>
+        </div>
+    </article>
+</section>
+{% endblock %}
