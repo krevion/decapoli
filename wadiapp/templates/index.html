@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block title %}Home | DECAPOLI{% endblock %}
+
+{% block content %}
+<section class="hero">
+    <div>
+        <p style="color: var(--accent); font-weight: 700; text-transform: uppercase; letter-spacing: 0.18em; margin: 0 0 1rem;">Fasteners made modern</p>
+        <h1>Welcome to DECAPOLI</h1>
+        <p>Discover high-quality fasteners, seamless service, and a faster path from specification to delivery.</p>
+    </div>
+    <a class="hero-button" href="/contact/">Request a quote</a>
+</section>
+ 
+<section>
+    <h2 class="section-title">Featured Products</h2>
+    <div class="products-grid">
+        <article class="product-card">
+            <img src="{% static 'images/bolts_photo.jpg' %}" alt="Hex bolts">
+            <div class="product-info">
+                <div class="product-title">Hex Bolts</div>
+                <div class="product-desc">Durable carbon steel hex bolts for general use.</div>
+                <div class="product-meta"><div class="price">From KSh 30</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="{% static 'images/pexels-john-triwinata-1666548748-30496227.jpg' %}" alt="Nuts and threaded fasteners">
+            <div class="product-info">
+                <div class="product-title">Nuts</div>
+                <div class="product-desc">Assorted hex, nyloc, and flange nuts in many grades.</div>
+                <div class="product-meta"><div class="price">From KSh 6</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="{% static 'images/pexels-padrinan-3930093.jpg' %}" alt="Washers and hardware components">
+            <div class="product-info">
+                <div class="product-title">Washers</div>
+                <div class="product-desc">Flat, spring, and sealing washers for most assemblies.</div>
+                <div class="product-meta"><div class="price">From KSh 6</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="{% static 'images/pexels-nic-scrollstoppingphotos-28119589.jpg' %}" alt="Spring washers and small fasteners">
+            <div class="product-info">
+                <div class="product-title">Spring Washers</div>
+                <div class="product-desc">Split lock washers and wave washers for vibration resistance.</div>
+                <div class="product-meta"><div class="price">From KSh 7</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="{% static 'images/pexels-subhd-suhail-118636722-37662322.jpg' %}" alt="Bolts on workshop floor">
+            <div class="product-info">
+                <div class="product-title">Center Bolts</div>
+                <div class="product-desc">Precision center bolts for assemblies requiring axial alignment.</div>
+                <div class="product-meta"><div class="price">From KSh 50</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="{% static 'images/pexels-tomfisk-18500079.jpg' %}" alt="Automotive spacer assembly">
+            <div class="product-info">
+                <div class="product-title">Car Spacers</div>
+                <div class="product-desc">Precision spacers and bushings for automotive assemblies.</div>
+                <div class="product-meta"><div class="price">From KSh 150</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+
+        <article class="product-card">
+            <img src="{% static 'images/pexels-john-triwinata-1666548748-28867253.jpg' %}" alt="Hardware fasteners">
+            <div class="product-info">
+                <div class="product-title">Body Clips</div>
+                <div class="product-desc">Durable body clips for trim, panels, and automotive use.</div>
+                <div class="product-meta"><div class="price">From KSh 4</div><a class="btn-ghost" href="/contact/">Enquire</a></div>
+            </div>
+        </article>
+    </div>
+    <div id="no-results-message" class="no-results" hidden>
+        <h3>No featured item matches your search.</h3>
+        <p>If you need something else, contact us on WhatsApp or call one of our numbers for a custom sourcing request.</p>
+        <p><a class="link-button" href="https://wa.me/254721248030">WhatsApp +254 721 248 030</a> or <a class="link-button" href="tel:+254721236954">Call +254 721 236 954</a></p>
+    </div>
+</section>
+
+{% endblock %}
